@@ -1,23 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ProcessProducts from './components/ProcessProducts.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Challenge - Average Cubic Weight</h1>
+        <p>Please click the Process button below to begin calculating the product average cubic weight</p>
+        <ProcessProducts baseUrl="http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com" startUrl="/api/products/1" />
       </header>
     </div>
   );
